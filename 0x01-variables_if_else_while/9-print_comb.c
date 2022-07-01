@@ -5,15 +5,23 @@
 */
 int main(void)
 {
-int i;
-for (i = 48; i <= 57; i++)
+i = 48;
+while (i < 58)
 {
+if (e != i && e < i)
+{
+putchar(e);
 putchar(i);
-if (i < 57)
+if (i == 57 && e == 56)
 {
+break;
+}
 putchar(',');
 putchar(' ');
 }
+i++;
+}
+e++;
 }
 putchar('\n');
 return (0);
