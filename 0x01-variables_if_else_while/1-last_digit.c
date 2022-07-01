@@ -1,19 +1,23 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
-<<<<<<< HEAD
-*main - main block
-*Return: 0
-*/
-=======
 * main - main block
-* Return: o
+* Return: 0
 */
->>>>>>> d2ff178a50b839beadd1521f480a95d30b156ab6
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-putchar('\n');
+int n;
+int last;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+last= n % 10;
+if (last > 5)
+printf("Last digit of %d is %d and is greater than 5\n", n, last);
+else if (last == 0)
+printf("Last digit of %d is %d and is 0\n", n, last);
+else if (last < 6 && last != 0)
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+/* your code goes there */
 return (0);
 }
