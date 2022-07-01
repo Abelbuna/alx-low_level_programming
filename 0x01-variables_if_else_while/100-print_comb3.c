@@ -16,6 +16,7 @@ while (i < 58)
 if (e != i && e < i)
 putchar(e);
 putchar(i);
+{
 if (i == 57 && e == 56)
 {
 break;
